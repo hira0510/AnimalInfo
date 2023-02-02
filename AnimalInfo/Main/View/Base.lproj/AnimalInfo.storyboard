@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animal Info Landing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AnimalInfoLandingViewController" id="BYZ-38-t0r" customClass="AnimalInfoLandingViewController" customModule="AnimalInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-xp-CVq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" translatesAutoresizingMaskIntoConstraints="NO" id="7It-rC-y2f">
+                                <rect key="frame" x="294.66666666666669" y="63.999999999999993" width="99.333333333333314" height="99.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7It-rC-y2f" secondAttribute="height" multiplier="1:1" id="PUE-Dk-hjp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7It-rC-y2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Atd-Gk-ebV"/>
+                            <constraint firstItem="6Kj-xp-CVq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QbG-TJ-rqR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7It-rC-y2f" secondAttribute="trailing" constant="20" id="RN8-PP-M5K"/>
+                            <constraint firstAttribute="bottom" secondItem="6Kj-xp-CVq" secondAttribute="bottom" id="Tq7-0d-N14"/>
+                            <constraint firstItem="7It-rC-y2f" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="90:375" id="aDe-vW-M99"/>
+                            <constraint firstItem="6Kj-xp-CVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q5c-qP-QjP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Kj-xp-CVq" secondAttribute="trailing" id="yGW-4D-hqE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="views" destination="BKh-CC-guG" id="wse-NZ-myk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="BKh-CC-guG" customClass="AnimalInfoLandingViews" customModule="AnimalInfo" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loadingImageView" destination="7It-rC-y2f" id="bdx-m7-PUw"/>
+                        <outlet property="mImageView" destination="6Kj-xp-CVq" id="vP3-Bg-AfT"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-11819" y="27"/>
+        </scene>
+        <!--Adopt-->
+        <scene sceneID="fZl-41-6EZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Adopt" id="d7E-ML-GiZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="领养" image="house" catalog="system" selectedImage="house.fill" id="wbw-y6-qXt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="618-JY-t6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11356" y="504"/>
+        </scene>
+        <!--Lost-->
+        <scene sceneID="qaL-97-Zf1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lost" id="eNW-wc-7EL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="走失" image="person.fill.questionmark" catalog="system" selectedImage="person.fill.questionmark.rtl" id="XYG-TM-Xba"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7e-Xr-XNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11151" y="504"/>
+        </scene>
+        <!--Animal-->
+        <scene sceneID="uSA-FE-ycG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Animal" id="fDD-oA-Syk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="小知识" image="book" catalog="system" selectedImage="book.fill" id="Oym-gF-811"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnB-fE-2uo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10929" y="504"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="5C7-rR-pLN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorite" id="iUy-L0-YD9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="heart" catalog="system" selectedImage="heart.fill" id="3Ty-Nd-jhC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pv-5E-WDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10717" y="504"/>
+        </scene>
+        <!--Animal Info Main Tab Controller-->
+        <scene sceneID="CcU-c4-Qw6">
+            <objects>
+                <tabBarController storyboardIdentifier="AnimalInfoMainTabController" id="T7m-c2-qsw" customClass="AnimalInfoMainTabController" customModule="AnimalInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VPO-vr-ylY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" red="0.70164728489051875" green="0.90638463026812288" blue="0.97282575750026579" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.29411764705882354" green="0.41176470588235292" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d7E-ML-GiZ" kind="relationship" relationship="viewControllers" id="u1c-SG-lpd"/>
+                        <segue destination="eNW-wc-7EL" kind="relationship" relationship="viewControllers" id="L7l-vO-fgD"/>
+                        <segue destination="fDD-oA-Syk" kind="relationship" relationship="viewControllers" id="zlH-Zc-VrB"/>
+                        <segue destination="iUy-L0-YD9" kind="relationship" relationship="viewControllers" id="uQR-ko-e6d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P37-pY-F5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11048" y="27"/>
+        </scene>
+        <!--Animal Info Web View Controller-->
+        <scene sceneID="Bbk-2S-Gf8">
+            <objects>
+                <viewController storyboardIdentifier="AnimalInfoWebViewController" modalPresentationStyle="overFullScreen" id="mIF-Eb-Oe1" customClass="AnimalInfoWebViewController" customModule="AnimalInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8M-SV-gk7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-49-mW5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="rBd-Pq-lsW">
+                                        <barButtonItem key="leftBarButtonItem" image="back" id="N4c-xt-lpt">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didClickDismissBtn:" destination="mIF-Eb-Oe1" id="Sef-WQ-EOG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="收起" id="lmd-Lh-NIY">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didClickHidden:" destination="mIF-Eb-Oe1" id="cUa-vg-j12"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piY-sM-Xpk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n2P-Bs-4dT"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="leading" secondItem="L8M-SV-gk7" secondAttribute="leading" id="5A4-W1-kEj"/>
+                            <constraint firstItem="n2P-Bs-4dT" firstAttribute="trailing" secondItem="0r3-49-mW5" secondAttribute="trailing" id="AAG-Xi-nlh"/>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="top" secondItem="piY-sM-Xpk" secondAttribute="bottom" id="ALF-0s-t43"/>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="top" secondItem="n2P-Bs-4dT" secondAttribute="top" id="ENB-oa-oI0"/>
+                            <constraint firstItem="piY-sM-Xpk" firstAttribute="top" secondItem="L8M-SV-gk7" secondAttribute="top" id="EkS-qS-IQ4"/>
+                            <constraint firstItem="n2P-Bs-4dT" firstAttribute="trailing" secondItem="piY-sM-Xpk" secondAttribute="trailing" id="Vmp-TA-109"/>
+                            <constraint firstItem="piY-sM-Xpk" firstAttribute="leading" secondItem="n2P-Bs-4dT" secondAttribute="leading" id="w8q-U4-r1N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="0r3-49-mW5" id="AfK-zF-ddc"/>
+                        <outlet property="navHiddenButtonItem" destination="lmd-Lh-NIY" id="S9E-aF-XbY"/>
+                        <outlet property="topView" destination="piY-sM-Xpk" id="LiE-nb-61N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KX-zb-gcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10233.333333333334" y="26.785714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="21"/>
+        <image name="bg2" width="685" height="1218"/>
+        <image name="bg5" width="2051" height="2943"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="102"/>
+        <image name="person.fill.questionmark.rtl" catalog="system" width="128" height="102"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
